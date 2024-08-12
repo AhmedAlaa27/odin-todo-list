@@ -1,0 +1,90 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.main-container {
+    display: grid;
+    grid-template: 1fr / 1fr 5fr;
+    height: 100vh;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    background-color: #f3e8ff;
+}
+
+.sidebar h3 {
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    color: #3b0764;
+}
+
+.sidebar .projects {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.sidebar .projects .project {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #6b21a8;
+    font-weight: bold;
+    font-style: 12px;
+    cursor: pointer;
+}
+
+.view {
+    background-color: white;
+}
+
+.view .container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.view .container .title {
+    font-weight: bold;
+    font-size: 36px;
+    width: fit-content;
+    border-bottom: 1px solid #3b0764;
+    padding-bottom: 5px;
+    color: #3b0764;
+}
+
+.view .tasks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.view .tasks .task {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 6px;
+    background-color: #faf5ff;
+    padding: 12px;
+    border-left: 4px solid purple;
+    border-radius: 5px;
+    height: 100px;
+    font-weight: bold;
+    color: purple;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
