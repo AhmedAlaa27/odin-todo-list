@@ -1,8 +1,21 @@
 import './style.css'
+import Project from './project';
+import Projects from './sidebar';
 
-function PageLoad() {
-    const element = document.createElement('div');
-    return element;
+function Sidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.appendChild(Projects());
 }
 
-document.body.appendChild(PageLoad());
+function PageLoad() {
+    const container = document.querySelector('.container');
+
+    container.appendChild(Project())
+
+    return container;
+}
+
+Sidebar();
+
+const view = document.querySelector('.view');
+view.appendChild(PageLoad());
