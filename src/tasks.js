@@ -1,4 +1,4 @@
-export default function Tasks() {
+export default function Tasks(project) {
     const tasks = document.createElement('div');
     tasks.classList.add('tasks');
 
